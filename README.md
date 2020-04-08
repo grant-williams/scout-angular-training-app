@@ -1,6 +1,21 @@
-# ScoutAngularTrainingApp
+# scout-angular-training-app
+This project was created for the Angular Training Badge on Scout and bootstrapped with [Angular CLI](https://github.com/angular/angular-cli).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+## Badge Requirements
+- 1 API integration with an API of your choice
+- 1 editable form with real-time input validation
+- At least 2 pages using Vue Router to navigate between them
+- At least 3 components with one parent and one child - Complete
+    - Child Components:
+        - footer
+        - highlight-card
+        - requirements
+- At least 2 unit tests - Complete
+    - Tests:
+        - app.component.spec.js
+        - footer.component.spec.js
+        - highlight-card.component.spec.js
+        - requirements.component.spec.js
 
 ## Development server
 
@@ -21,7 +36,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
