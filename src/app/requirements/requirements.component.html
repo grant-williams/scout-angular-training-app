@@ -1,0 +1,37 @@
+<div class="content-container">
+  <h2>Badge Requirements</h2>
+  <p>The following must exist in the application to qualify.</p>
+
+  <input type="hidden" #selection />
+
+  <div class="card-container">
+    <div class="card card-small" (click)="selection.value = 'api'">
+      <span>1 API integration</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'form'">
+      <span>1 form with real-time input validation</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'router'">
+      <span>At least 2 pages using Angular Router</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'child'">
+      <span>At least 3 child components</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'tests'">
+      <span>At least 2 unit tests</span>
+    </div>
+  </div>
+
+  <!-- Terminal -->
+  <div class="terminal" [ngSwitch]="selection.value">
+    <pre *ngSwitchDefault>API</pre>
+    <pre *ngSwitchCase="'form'">Form</pre>
+    <pre *ngSwitchCase="'router'">Router</pre>
+    <pre *ngSwitchCase="'child'">Child</pre>
+    <pre *ngSwitchCase="'tests'">Tests</pre>
+  </div>
+</div>
