@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { RequirementsComponent } from './requirements/requirements.component';
 import { HighlightCardComponent } from './highlight-card/highlight-card.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     RequirementsComponent,
-    HighlightCardComponent
+    HighlightCardComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
