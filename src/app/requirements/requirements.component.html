@@ -30,7 +30,11 @@
   <div class="terminal" [ngSwitch]="selection.value">
     <pre *ngSwitchDefault>API</pre>
     <pre *ngSwitchCase="'form'">Form</pre>
-    <pre *ngSwitchCase="'router'">Router</pre>
+    <pre *ngSwitchCase="'router'">
+      <li>Home Page</li>
+      <li>Dashboard Page</li>
+      <li>Not Found Page</li>
+    </pre>
     <pre *ngSwitchCase="'child'">
       <li>footer</li>
       <li>highlight-card</li>
