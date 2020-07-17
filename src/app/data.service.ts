@@ -15,7 +15,7 @@ export class DataService {
     const headers = {
       'content-type': 'application/octet-stream',
       'x-rapidapi-host': 'love-calculator.p.rapidapi.com',
-      'x-rapidapi-key': 'd8e023d898msh4120b30eacd178cp1a0006jsnf39db72ea17f',
+      'x-rapidapi-key': 'ENTER API KEY HERE',
       'useQueryString': 'true',
     };
     const params = {
