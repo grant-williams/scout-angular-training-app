@@ -28,14 +28,19 @@
 
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
-    <pre *ngSwitchDefault>API</pre>
-    <pre *ngSwitchCase="'form'">Form</pre>
+    <pre *ngSwitchDefault>
+      <li>Love Calculator API on Dashboard page</li>
+    </pre>
+    <pre *ngSwitchCase="'form'">
+      <li>Love Calculator form on Dashboard page</li>
+    </pre>
     <pre *ngSwitchCase="'router'">
       <li>Home Page</li>
       <li>Dashboard Page</li>
       <li>Not Found Page</li>
     </pre>
     <pre *ngSwitchCase="'child'">
+      <li>form</li>
       <li>footer</li>
       <li>highlight-card</li>
       <li>requirements</li>
@@ -44,6 +49,7 @@
         <li>app.component.spec.js</li>
         <li>dashboard.component.spec.js</li>
         <li>not-found.component.spec.js</li>
+        <li>form.component.spec.js</li>
         <li>footer.component.spec.js</li>
         <li>highlight-card.component.spec.js</li>
         <li>requirements.component.spec.js</li>

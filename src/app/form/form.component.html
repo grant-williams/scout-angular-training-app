@@ -1,0 +1,61 @@
+<div class="card card-large">
+  <form
+    name="loveForm"
+    #loveForm="ngForm"
+    (ngSubmit)="onSubmit()"
+    *ngIf="!submitted"
+    class="form-container"
+  >
+    <div class="form-group">
+      <label for="fname">Your Name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        [(ngModel)]="model.fname"
+        #fname="ngModel"
+        class="form-control"
+        required
+      />
+    </div>
+    <div [hidden]="fname.valid || fname.pristine" class="alert alert-danger">
+      Your name is required
+    </div>
+    <div class="form-group">
+      <label for="sname">Their Name:</label>
+      <input
+        type="text"
+        id="sname"
+        name="sname"
+        [(ngModel)]="model.sname"
+        #sname="ngModel"
+        class="form-control"
+        required
+      />
+    </div>
+    <div [hidden]="sname.valid || sname.pristine" class="alert alert-danger">
+      Their name is required
+    </div>
+    <button
+      type="submit"
+      [disabled]="!loveForm.form.valid"
+      [hidden]="submitted"
+      class="btn"
+    >
+      Submit
+    </button>
+  </form>
+  <div *ngIf="submitted && loading">
+    <h3>Loading...</h3>
+  </div>
+  <div *ngIf="submitted && !loading">
+    <h2>
+      {{ model.fname }} & {{ model.sname }} are {{ percentage }}% compatible
+    </h2>
+    <h3>{{ result }}</h3>
+    <br />
+    <button class="btn" (click)="onReset()">
+      Try again
+    </button>
+  </div>
+</div>

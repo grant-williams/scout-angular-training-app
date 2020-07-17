@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['../../app.component.css']
+  styleUrls: ['../../app.component.css'],
 })
 export class DashboardComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

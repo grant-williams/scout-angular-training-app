@@ -94,7 +94,6 @@ a:hover {
   border-radius: 4px;
   border: 1px solid #eee;
   background-color: #fafafa;
-  height: 40px;
   width: 200px;
   margin: 0 8px 16px;
   padding: 16px;
@@ -113,6 +112,11 @@ a:hover {
 .card.card-small {
   height: 16px;
   width: 250px;
+}
+
+.card.card-large {
+  min-height: 100px;
+  width: 400px;
 }
 
 .card-container .card:not(.highlight-card) {
@@ -284,4 +288,31 @@ svg#clouds {
     display: none;
     visibility: hidden;
   }
+}
+.form-container {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+
+.alert {
+  color: darkred;
+  width: 50%;
+  padding: 1px;
+  text-align: center;
+  margin: auto;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  color: white;
+  background-color: #1976d2;
 }
